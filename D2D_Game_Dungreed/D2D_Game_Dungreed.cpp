@@ -3,6 +3,7 @@
 
 #include "framework.h"
 #include "D2D_Game_Dungreed.h"
+#include "MainGame.h"
 
 #define MAX_LOADSTRING 100
 
@@ -45,17 +46,30 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_D2DGAMEDUNGREED));
 
-	//MSG msg;
+	MainGame tMainGame;
+	tMainGame.Ready();
+
 	g_msg.message = WM_NULL;
     // 기본 메시지 루프입니다:
-    while (GetMessage(&g_msg, nullptr, 0, 0))
-    {
-        if (!TranslateAccelerator(g_msg.hwnd, hAccelTable, &g_msg))
-        {
-            TranslateMessage(&g_msg);
-            DispatchMessage(&g_msg);
-        }
-    }
+	while (WM_QUIT != g_msg.message)
+	{
+		if (PeekMessage(&g_msg, nullptr, 0, 0, PM_REMOVE)) {
+			if (!TranslateAccelerator(g_msg.hwnd, hAccelTable, &g_msg))
+			{
+				TranslateMessage(&g_msg);
+				DispatchMessage(&g_msg);
+			}
+		}
+
+		if (FPS_MGR->Loop_FPS())
+		{
+			tMainGame.Update();
+			tMainGame.LateUpdate();
+			tMainGame.Render();
+		}
+	}
+
+	FPS_Manager::Destroy_Instance();
 
     return (int) g_msg.wParam;
 }

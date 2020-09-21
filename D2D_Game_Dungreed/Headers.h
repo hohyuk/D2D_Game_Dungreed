@@ -7,6 +7,8 @@
 #include "Template.h"
 
 #include "SingletonMacro.h"
+#include "TimeManager.h"
+#include "FPS_Manager.h"
 #include "GraphicDevice.h"
 
 

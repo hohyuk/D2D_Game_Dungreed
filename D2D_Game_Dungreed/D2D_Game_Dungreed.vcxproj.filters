@@ -23,6 +23,18 @@
     <Filter Include="97.GraphicDevice">
       <UniqueIdentifier>{c45d5e37-f375-4f93-8ef7-d09cddc8f9b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="95.Manager">
+      <UniqueIdentifier>{f0baacfc-bf89-4fbc-ab53-738ba6d12191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95.Manager\01.FPS">
+      <UniqueIdentifier>{ff98c981-8f7d-44b0-b6ba-9ce623d42790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Texture">
+      <UniqueIdentifier>{2097b1a1-a421-463e-be3b-3e9d43147db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95.Manager\02.Time">
+      <UniqueIdentifier>{b531088c-b699-4cdb-8afc-a93ffba677fd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D2D_Game_Dungreed.h">
@@ -73,6 +85,12 @@
     <ClInclude Include="Template.h">
       <Filter>98.Headers</Filter>
     </ClInclude>
+    <ClInclude Include="FPS_Manager.h">
+      <Filter>95.Manager\01.FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>95.Manager\02.Time</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2D_Game_Dungreed.rc">
@@ -102,6 +120,12 @@
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
       <Filter>03.GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS_Manager.cpp">
+      <Filter>95.Manager\01.FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>95.Manager\02.Time</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -10,6 +10,7 @@
 #include "TimeManager.h"
 #include "FPS_Manager.h"
 #include "GraphicDevice.h"
+#include "TextureManager.h"
 
 
 inline void LeakCheck()

@@ -91,6 +91,21 @@
     <ClInclude Include="TimeManager.h">
       <Filter>95.Manager\02.Time</Filter>
     </ClInclude>
+    <ClInclude Include="MultiTexture.h">
+      <Filter>96.Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleTexture.h">
+      <Filter>96.Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>96.Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>96.Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoad.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2D_Game_Dungreed.rc">
@@ -126,6 +141,18 @@
     </ClCompile>
     <ClCompile Include="TimeManager.cpp">
       <Filter>95.Manager\02.Time</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiTexture.cpp">
+      <Filter>96.Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleTexture.cpp">
+      <Filter>96.Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>96.Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>96.Texture</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

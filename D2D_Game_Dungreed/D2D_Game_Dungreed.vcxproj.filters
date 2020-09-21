@@ -20,6 +20,9 @@
     <Filter Include="98.Headers">
       <UniqueIdentifier>{d349b415-2285-42cf-9ba0-c5236611e452}</UniqueIdentifier>
     </Filter>
+    <Filter Include="97.GraphicDevice">
+      <UniqueIdentifier>{c45d5e37-f375-4f93-8ef7-d09cddc8f9b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D2D_Game_Dungreed.h">
@@ -46,6 +49,30 @@
     <ClInclude Include="Structs.h">
       <Filter>98.Headers</Filter>
     </ClInclude>
+    <ClInclude Include="GraphicDevice.h">
+      <Filter>97.GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonMacro.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>01.MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>02.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>03.GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Template.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2D_Game_Dungreed.rc">
@@ -63,6 +90,18 @@
   <ItemGroup>
     <ClCompile Include="D2D_Game_Dungreed.cpp">
       <Filter>99.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicDevice.cpp">
+      <Filter>97.GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>01.MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>02.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>03.GameObject</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

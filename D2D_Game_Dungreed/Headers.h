@@ -1,7 +1,13 @@
 #pragma once
 #include "Extern.h"
 #include "Constexpr.h"
+#include "Enums.h"
 #include "Structs.h"
+#include "Define.h"
+#include "Template.h"
+
+#include "SingletonMacro.h"
+#include "GraphicDevice.h"
 
 
 inline void LeakCheck()
@@ -12,3 +18,10 @@ inline void LeakCheck()
 	//_CrtSetBreakAlloc(예)260); // 만약 누수가 생기면 ()안에 브레이크 포인터 번호를 넣자
 	//_CrtSetBreakAlloc(1484);
 }
+
+// ErrorMessage
+#ifdef _AFX
+#define ERR_MSG(Message) AfxMessageBox(Message)
+#else
+#define ERR_MSG(Message) MessageBox(nullptr,Message,TEXT("System Error"),MB_OK)
+#endif

@@ -35,7 +35,7 @@ using namespace std;
 
 // =============SOUND====================
 #include <io.h>
-//#include "fmod.h"
+#include "fmod.h"
 #pragma comment(lib, "fmodex_vc.lib")
 //#include "SoundMgr.h"
 // ======================================
@@ -45,8 +45,7 @@ using namespace std;
 
 
 
-
-//========================================================
+//=================== 콘솔창 띄우기 =======================
 // 콘솔창 띄우기
 #ifdef _DEBUG
 #pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console") 
@@ -57,9 +56,7 @@ using namespace std;
 
 
 
-
-//========================================================
-// 메모리 누수 체크
+// ================= 메모리 누수 체크 =====================
 #ifdef _DEBUG
 #define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
 // Replace _NORMAL_BLOCK with _CLIENT_BLOCK if you want the

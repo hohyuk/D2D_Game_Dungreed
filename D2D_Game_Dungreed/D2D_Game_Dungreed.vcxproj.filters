@@ -35,6 +35,12 @@
     <Filter Include="95.Manager\02.Time">
       <UniqueIdentifier>{b531088c-b699-4cdb-8afc-a93ffba677fd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02.Scene\00.Manager">
+      <UniqueIdentifier>{bd8c2730-a553-41f9-9126-41cd8097fddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene\01.Logo">
+      <UniqueIdentifier>{1c72d279-337c-40ab-b2f6-3510bfb32216}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D2D_Game_Dungreed.h">
@@ -106,6 +112,12 @@
     <ClInclude Include="TextureLoad.h">
       <Filter>98.Headers</Filter>
     </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>02.Scene\00.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoScene.h">
+      <Filter>02.Scene\01.Logo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2D_Game_Dungreed.rc">
@@ -153,6 +165,12 @@
     </ClCompile>
     <ClCompile Include="TextureManager.cpp">
       <Filter>96.Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>02.Scene\00.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoScene.cpp">
+      <Filter>02.Scene\01.Logo</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

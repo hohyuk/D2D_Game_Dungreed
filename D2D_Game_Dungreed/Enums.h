@@ -9,3 +9,7 @@ namespace Object{
 	enum STATE {};
 	enum MAP_RENDER_SORT{};
 }
+
+namespace SCENE {
+	enum TYPE { LOGO_SCENE, TOWN_SCENE, END_SCENE };
+}

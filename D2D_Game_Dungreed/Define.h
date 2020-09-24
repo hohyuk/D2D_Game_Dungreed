@@ -7,3 +7,4 @@
 #define GD_MGR			GraphicDevice::Get_Instance()
 #define TEXTURE_MGR		TextureManager::Get_Instance()
 
+#define SCENE_MGR		SceneManager::Get_Instance()

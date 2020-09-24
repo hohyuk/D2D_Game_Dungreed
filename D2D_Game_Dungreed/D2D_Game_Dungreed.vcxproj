@@ -163,10 +163,12 @@
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GraphicDevice.h" />
     <ClInclude Include="Headers.h" />
+    <ClInclude Include="LogoScene.h" />
     <ClInclude Include="MainGame.h" />
     <ClInclude Include="MultiTexture.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SingleTexture.h" />
     <ClInclude Include="SingletonMacro.h" />
     <ClInclude Include="Structs.h" />
@@ -182,9 +184,11 @@
     <ClCompile Include="FPS_Manager.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GraphicDevice.cpp" />
+    <ClCompile Include="LogoScene.cpp" />
     <ClCompile Include="MainGame.cpp" />
     <ClCompile Include="MultiTexture.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SingleTexture.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureManager.cpp" />

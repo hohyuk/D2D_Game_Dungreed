@@ -11,7 +11,7 @@
 #include "FPS_Manager.h"
 #include "GraphicDevice.h"
 #include "TextureManager.h"
-
+#include "SceneManager.h"
 
 inline void LeakCheck()
 {

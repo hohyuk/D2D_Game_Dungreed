@@ -153,24 +153,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BaseMath.h" />
+    <ClInclude Include="ButtonUI.h" />
     <ClInclude Include="Constexpr.h" />
     <ClInclude Include="D2D_Game_Dungreed.h" />
+    <ClInclude Include="D3DX_Func.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="Extern.h" />
     <ClInclude Include="FPS_Manager.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectManager.h" />
     <ClInclude Include="GraphicDevice.h" />
     <ClInclude Include="Headers.h" />
+    <ClInclude Include="KeyManager.h" />
     <ClInclude Include="LogoScene.h" />
     <ClInclude Include="MainGame.h" />
+    <ClInclude Include="MouseUI.h" />
     <ClInclude Include="MultiTexture.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SingleTexture.h" />
     <ClInclude Include="SingletonMacro.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="Structs.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Template.h" />
@@ -178,21 +185,28 @@
     <ClInclude Include="TextureLoad.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="UI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ButtonUI.cpp" />
     <ClCompile Include="D2D_Game_Dungreed.cpp" />
     <ClCompile Include="FPS_Manager.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
     <ClCompile Include="GraphicDevice.cpp" />
+    <ClCompile Include="KeyManager.cpp" />
     <ClCompile Include="LogoScene.cpp" />
     <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="MouseUI.cpp" />
     <ClCompile Include="MultiTexture.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SingleTexture.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2D_Game_Dungreed.rc" />

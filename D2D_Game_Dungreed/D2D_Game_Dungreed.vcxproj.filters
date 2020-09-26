@@ -41,6 +41,27 @@
     <Filter Include="02.Scene\01.Logo">
       <UniqueIdentifier>{1c72d279-337c-40ab-b2f6-3510bfb32216}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.GameObject\00.Manager">
+      <UniqueIdentifier>{4ddf8b1d-4991-4bb1-a311-a641f44af016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.GameObject\01.Actor">
+      <UniqueIdentifier>{97acbf37-d8b4-405b-9246-b79dfe47a7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.GameObject\07.UI">
+      <UniqueIdentifier>{8268e71b-75e5-4905-b694-7ab14206fb41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.GameObject\07.UI\Button">
+      <UniqueIdentifier>{62ba8d84-f3c5-46b1-9f40-7caf65dcce9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95.Manager\03.KeyMouse">
+      <UniqueIdentifier>{e3af4c4f-cb9a-4d02-b559-c1263762b5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.GameObject\07.UI\Mouse">
+      <UniqueIdentifier>{da818d2f-f0b8-40df-8f88-1a219a833c2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95.Manager\04.Sound">
+      <UniqueIdentifier>{45cdb164-9ea2-4542-afc6-c93ec5e31cd8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D2D_Game_Dungreed.h">
@@ -118,6 +139,30 @@
     <ClInclude Include="LogoScene.h">
       <Filter>02.Scene\01.Logo</Filter>
     </ClInclude>
+    <ClInclude Include="BaseMath.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectManager.h">
+      <Filter>03.GameObject\00.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>03.GameObject\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonUI.h">
+      <Filter>03.GameObject\07.UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DX_Func.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>95.Manager\03.KeyMouse</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseUI.h">
+      <Filter>03.GameObject\07.UI\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>95.Manager\04.Sound</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2D_Game_Dungreed.rc">
@@ -171,6 +216,24 @@
     </ClCompile>
     <ClCompile Include="LogoScene.cpp">
       <Filter>02.Scene\01.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectManager.cpp">
+      <Filter>03.GameObject\00.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>03.GameObject\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonUI.cpp">
+      <Filter>03.GameObject\07.UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>95.Manager\03.KeyMouse</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseUI.cpp">
+      <Filter>03.GameObject\07.UI\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>95.Manager\04.Sound</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

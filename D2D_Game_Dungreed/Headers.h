@@ -1,17 +1,30 @@
 #pragma once
+
 #include "Extern.h"
 #include "Constexpr.h"
 #include "Enums.h"
 #include "Structs.h"
 #include "Define.h"
 #include "Template.h"
+#include "BaseMath.h"
+#include "D3DX_Func.h"
 
 #include "SingletonMacro.h"
 #include "TimeManager.h"
 #include "FPS_Manager.h"
 #include "GraphicDevice.h"
 #include "TextureManager.h"
+#include "KeyManager.h"
+
 #include "SceneManager.h"
+
+// =============SOUND====================
+#include <io.h>
+#include "fmod.h"
+#pragma comment(lib, "fmodex_vc.lib")
+#include "SoundManager.h"
+// ======================================
+
 
 inline void LeakCheck()
 {

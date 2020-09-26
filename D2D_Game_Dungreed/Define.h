@@ -8,3 +8,10 @@
 #define TEXTURE_MGR		TextureManager::Get_Instance()
 
 #define SCENE_MGR		SceneManager::Get_Instance()
+#define OBJ_MGR			GameObjectManager::Get_Instance()
+#define MOUSE_POINT		OBJ_MGR->Get_MousePoint()
+
+#define KEY_MGR			KeyManager::Get_Instance()
+
+#define SOUND_MGR		SoundManager::Get_Instance()
+#define SOUND_ID		SoundManager::CHANNELID

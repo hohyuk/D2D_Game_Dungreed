@@ -20,7 +20,6 @@ private:
 	void Render_FadeIn();
 private:
 	SCENE::TYPE m_eCurScene;
-	SCENE::TYPE m_eNextScene;
 	Scene* m_pScene{ nullptr };
 
 	bool	isFadeIn_Activation;

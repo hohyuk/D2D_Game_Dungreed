@@ -1,6 +1,7 @@
 #pragma once
 
-class GameObject;
+#include "GameObjectManager.h"
+
 class Scene abstract
 {
 public:

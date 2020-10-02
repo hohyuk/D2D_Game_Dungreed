@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Actor.h" />
     <ClInclude Include="BaseMath.h" />
     <ClInclude Include="ButtonUI.h" />
     <ClInclude Include="Constexpr.h" />
@@ -167,17 +168,20 @@
     <ClInclude Include="GameObjectManager.h" />
     <ClInclude Include="GraphicDevice.h" />
     <ClInclude Include="Headers.h" />
+    <ClInclude Include="InputComponent.h" />
     <ClInclude Include="KeyManager.h" />
     <ClInclude Include="LogoScene.h" />
     <ClInclude Include="MainGame.h" />
     <ClInclude Include="MouseUI.h" />
     <ClInclude Include="MultiTexture.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SingleTexture.h" />
     <ClInclude Include="SingletonMacro.h" />
     <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="StageScene.h" />
     <ClInclude Include="Structs.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Template.h" />
@@ -185,27 +189,33 @@
     <ClInclude Include="TextureLoad.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="TownScene.h" />
     <ClInclude Include="UI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Actor.cpp" />
     <ClCompile Include="ButtonUI.cpp" />
     <ClCompile Include="D2D_Game_Dungreed.cpp" />
     <ClCompile Include="FPS_Manager.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameObjectManager.cpp" />
     <ClCompile Include="GraphicDevice.cpp" />
+    <ClCompile Include="InputComponent.cpp" />
     <ClCompile Include="KeyManager.cpp" />
     <ClCompile Include="LogoScene.cpp" />
     <ClCompile Include="MainGame.cpp" />
     <ClCompile Include="MouseUI.cpp" />
     <ClCompile Include="MultiTexture.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SingleTexture.cpp" />
     <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="StageScene.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="TownScene.cpp" />
     <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>

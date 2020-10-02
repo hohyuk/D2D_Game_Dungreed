@@ -1,6 +1,6 @@
 #pragma once
 #include "GameObject.h"
-class UI :
+class Actor :
 	public GameObject
 {
 public:
@@ -8,7 +8,10 @@ public:
 	virtual HRESULT Ready() override;
 	virtual int Update() override;
 public:
-	explicit UI();
-	virtual ~UI();
+	explicit Actor();
+	virtual ~Actor();
+
+protected:
+	virtual void ChangeAnim();
 };
 

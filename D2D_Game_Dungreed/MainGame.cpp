@@ -12,7 +12,7 @@ void MainGame::Ready()
 	LoadTexture();
 	SOUND_MGR->Initialize();
 
-	SCENE_MGR->Change_Scene(SCENE::TYPE::LOGO_SCENE);
+	SCENE_MGR->Change_Scene(SCENE::TYPE::TOWN_SCENE);
 }
 
 void MainGame::Update()

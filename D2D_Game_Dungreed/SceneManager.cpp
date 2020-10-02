@@ -2,6 +2,8 @@
 #include "SceneManager.h"
 #include "GameObjectManager.h"
 #include "LogoScene.h"
+#include "TownScene.h"
+#include "StageScene.h"
 
 IMPLEMENT_SINGLETON(SceneManager)
 
@@ -28,7 +30,7 @@ HRESULT SceneManager::Change_Scene(SCENE::TYPE eNextScene)
 			m_pScene = new LogoScene;
 			break;
 		case SCENE::TYPE::TOWN_SCENE:
-			m_pScene = new LogoScene;
+			m_pScene = new TownScene;
 			break;
 		}
 

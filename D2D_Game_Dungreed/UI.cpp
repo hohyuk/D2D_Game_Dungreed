@@ -10,3 +10,11 @@ int UI::Update()
 {
 	return 0;
 }
+
+UI::UI()
+{
+}
+
+UI::~UI()
+{
+}

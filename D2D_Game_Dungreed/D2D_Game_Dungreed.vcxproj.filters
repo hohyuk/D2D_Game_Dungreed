@@ -62,6 +62,21 @@
     <Filter Include="95.Manager\04.Sound">
       <UniqueIdentifier>{45cdb164-9ea2-4542-afc6-c93ec5e31cd8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02.Scene\02.Town">
+      <UniqueIdentifier>{ff5d1ef0-c030-4e1c-8e98-cad01f735925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene\03.Stage">
+      <UniqueIdentifier>{c6e4927a-2a6a-4c9d-a795-c27f029be4c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.GameObject\01.Actor\Player">
+      <UniqueIdentifier>{cf6eab3d-9cf0-404a-a963-12f85b048d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.GameObject\06.Tile">
+      <UniqueIdentifier>{ddb0ddeb-f80b-4068-b907-dd124eadcce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Component">
+      <UniqueIdentifier>{61f7685c-6c81-4185-8768-02d0623f50fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D2D_Game_Dungreed.h">
@@ -163,6 +178,21 @@
     <ClInclude Include="SoundManager.h">
       <Filter>95.Manager\04.Sound</Filter>
     </ClInclude>
+    <ClInclude Include="TownScene.h">
+      <Filter>02.Scene\02.Town</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>02.Scene\03.Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>03.GameObject\01.Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>03.GameObject\01.Actor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="InputComponent.h">
+      <Filter>04.Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2D_Game_Dungreed.rc">
@@ -234,6 +264,21 @@
     </ClCompile>
     <ClCompile Include="SoundManager.cpp">
       <Filter>95.Manager\04.Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="TownScene.cpp">
+      <Filter>02.Scene\02.Town</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>02.Scene\03.Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>03.GameObject\01.Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>03.GameObject\01.Actor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="InputComponent.cpp">
+      <Filter>04.Component</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -28,3 +28,8 @@ typedef struct tagFrame
 	float fFixTime{ 0.5f };			// 프레임 넘기는 속도
 	wstring StateKey{ TEXT("") };
 }FRAME;
+
+typedef struct tagColor
+{
+	int iA{ 255 }, iR{ 255 }, iG{ 255 }, iB{ 255 };
+}COLOR;

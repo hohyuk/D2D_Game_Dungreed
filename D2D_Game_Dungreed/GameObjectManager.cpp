@@ -12,6 +12,7 @@ GameObjectManager::GameObjectManager()
 
 GameObjectManager::~GameObjectManager()
 {
+	Release();
 }
 
 D3DXVECTOR3 GameObjectManager::Get_MousePoint() const
@@ -19,7 +20,7 @@ D3DXVECTOR3 GameObjectManager::Get_MousePoint() const
 	if (nullptr == dynamic_cast<MouseUI*>(m_listObject[OBJECT::TYPE::MOUSE_OBJ].front()))
 		return D3DXVECTOR3();
 
-	return dynamic_cast<MouseUI*>(m_listObject[OBJECT::TYPE::MOUSE_OBJ].front())->MousePoint();
+	return dynamic_cast<MouseUI*>(m_listObject[OBJECT::TYPE::MOUSE_OBJ].front())->Get_MousePoint();
 }
 
 HRESULT GameObjectManager::Add_GameObject(OBJECT::TYPE eType, GameObject * pObject)

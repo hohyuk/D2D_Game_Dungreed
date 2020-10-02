@@ -1,7 +1,18 @@
 #include "framework.h"
 #include "MouseUI.h"
 
-D3DXVECTOR3 MouseUI::MousePoint()
+HRESULT MouseUI::Ready()
+{
+	//ShowCursor(false);
+	if (SCENE::TYPE::LOGO_SCENE == m_eSceneType)
+		m_wstrObjectKey = TEXT("BasicCursor");
+	else
+		m_wstrObjectKey = TEXT("ShootingCursor");
+
+	return S_OK;
+}
+
+int MouseUI::Update()
 {
 	POINT pt = {};
 	GetCursorPos(&pt);
@@ -15,18 +26,7 @@ D3DXVECTOR3 MouseUI::MousePoint()
 
 	m_tInfo.vPos = { static_cast<float>(pt.x) * fsizeX, static_cast<float>(pt.y) * fsizeY, 0.f };
 
-	return m_tInfo.vPos;
-}
-
-HRESULT MouseUI::Ready()
-{
-	ShowCursor(false);
-	if (SCENE::TYPE::LOGO_SCENE == m_eSceneType)
-		m_wstrObjectKey = TEXT("BasicCursor");
-	else
-		m_wstrObjectKey = TEXT("ShootingCursor");
-
-	return S_OK;
+	return 0;
 }
 
 GameObject * MouseUI::Create(SCENE::TYPE eScene)

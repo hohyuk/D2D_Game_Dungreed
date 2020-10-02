@@ -1,7 +1,7 @@
 #include "framework.h"
 #include "LogoScene.h"
-#include "ButtonUI.h"
 #include "MouseUI.h"
+#include "ButtonUI.h"
 HRESULT LogoScene::Ready()
 {
 	SOUND_MGR->StopAll();
@@ -19,14 +19,9 @@ HRESULT LogoScene::Ready()
 
 void LogoScene::Update()
 {
-	OBJ_MGR->LateUpdate();
+	OBJ_MGR->Update();
 	m_fBackMove = WrapFloat(0.f, m_fBackMove + (DELTA_TIME * 50.f), m_BackGroundSize);
 	m_fFrontMove = WrapFloat(0.f, m_fFrontMove + (DELTA_TIME * 100.f), m_BackGroundSize);
-}
-
-void LogoScene::LateUpdate()
-{
-	OBJ_MGR->LateUpdate();
 }
 
 void LogoScene::Render()
@@ -36,11 +31,6 @@ void LogoScene::Render()
 	Render_MainLogo();
 
 	OBJ_MGR->Render();
-}
-
-void LogoScene::Release()
-{
-	OBJ_MGR->Release();
 }
 
 LogoScene::LogoScene()
